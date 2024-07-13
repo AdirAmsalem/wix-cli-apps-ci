@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   integration:
-    name: "${{ matrix.os }} / ${{ matrix.package-manager }} / node ${{ matrix.node-version }})"
+    name: "${{ matrix.os }} / ${{ matrix.package-manager }} / node ${{ matrix.node-version }}"
 
     strategy:
       fail-fast: false
