@@ -10,7 +10,7 @@ on:
 
 jobs:
   integration:
-    name: "👀 ${{ matrix.adapter }} (os: ${{ matrix.os }}, node: ${{ matrix.node-version }})"
+    name: "👀 (os: ${{ matrix.os }}, node: ${{ matrix.node-version }})"
 
     strategy:
       fail-fast: false
@@ -26,14 +26,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
