@@ -32,6 +32,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install pnpm
+        if: matrix.package-manager == 'pnpm'
+        run: npm install -g pnpm
+
+      - name: Install yarn
+        if: matrix.package-manager == 'yarn'
+        run: npm install -g yarn
+
       - name: Install dependencies (yarn)
         if: matrix.package-manager == 'yarn'
         run: yarn
