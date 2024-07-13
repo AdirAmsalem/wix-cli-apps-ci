@@ -32,34 +32,22 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install pnpm
+      - name: pnpm
         if: matrix.package-manager == 'pnpm'
-        run: npm install -g pnpm
-
-      - name: Install yarn
+        run: |
+          npm install -g pnpm
+          pnpm
+          pnpm run build
+        
+      - name: yarn
         if: matrix.package-manager == 'yarn'
-        run: npm install -g yarn
-
-      - name: Install dependencies (yarn)
-        if: matrix.package-manager == 'yarn'
-        run: yarn
-
-      - name: Install dependencies (pnpm)
-        if: matrix.package-manager == 'pnpm'
-        run: pnpm install
-
-      - name: Install dependencies (npm)
+        run: |
+          npm install -g yarn
+          yarn
+          yarn build
+      
+      - name: npm
         if: matrix.package-manager == 'npm'
-        run: npm install
-
-      - name: Build (yarn)
-        if: matrix.package-manager == 'yarn'
-        run: yarn build
-
-      - name: Build (pnpm)
-        if: matrix.package-manager == 'pnpm'
-        run: pnpm build
-
-      - name: Build (npm)
-        if: matrix.package-manager == 'npm'
-        run: npm run build
+        run: |
+          npm install
+          npm run build
