@@ -8,6 +8,10 @@ on:
     branches:
       - '*'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   integration:
     name: "👀 (os: ${{ matrix.os }}, pm: ${{ matrix.package-manager }}, node: ${{ matrix.node-version }})"
