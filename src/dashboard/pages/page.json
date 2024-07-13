@@ -1,0 +1,5 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/dashboard-page.json",
+  "id": "16e716df-5e07-412b-998d-f52bded15558",
+  "title": "Wix CLI for Apps CI"
+}

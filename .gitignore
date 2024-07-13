@@ -1,0 +1,11 @@
+.wix
+node_modules
+dist
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+out
