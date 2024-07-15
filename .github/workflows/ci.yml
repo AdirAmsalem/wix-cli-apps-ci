@@ -33,8 +33,8 @@ jobs:
             node-version: 20
             package-manager: npm
           - os: ubuntu-latest
-            node-version: 20
-            package-manager: yarn
+            node-version: 22
+            package-manager: npm
           - os: macos-latest
             node-version: 18
             package-manager: npm
