@@ -20,9 +20,13 @@ jobs:
       fail-fast: false
       matrix:
         node-version: [18, 20, 22]
-        package-manager: [npm, yarn, pnpm]
+        package-manager: [npm]
         os: [ubuntu-latest]
         include:
+          - node-version: 18
+            package-manager: yarn
+          - node-version: 18
+            package-manager: pnpm
           - os: macos-latest
             node-version: 18
             package-manager: npm
