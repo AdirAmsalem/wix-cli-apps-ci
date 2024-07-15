@@ -19,9 +19,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [18, 20, 22]
-        package-manager: [npm]
         os: [ubuntu-latest]
+        package-manager: [npm]
+        node-version: [18, 20, 22]
         include:
           - node-version: 18
             package-manager: yarn
