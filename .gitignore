@@ -1,5 +1,6 @@
 .wix
 node_modules
+.yarn
 dist
 
 # Logs
