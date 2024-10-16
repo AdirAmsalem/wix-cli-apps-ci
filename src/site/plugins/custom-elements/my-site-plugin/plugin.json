@@ -1,0 +1,20 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/site-plugin.json",
+  "id": "0e8db4eb-36a2-41d1-a082-30e347715743",
+  "referenceComponentId": "88aa3dc2-8129-418b-a543-c65a88a2f782",
+  "marketData": {
+    "name": "My Site Plugin",
+    "logoUrl": "{{PUBLIC_URL}}/my-site-plugin/logo.svg"
+  },
+  "placements": [
+    {
+      "appDefinitionId": "1380b703-ce81-ff05-f115-39571d94dfcd",
+      "widgetId": "bda15dc1-816d-4ff3-8dcb-1172d5343cce",
+      "slotId": "category-page-list-top"
+    }
+  ],
+  "installation": {
+    "autoAddToSite": true
+  }
+}
+

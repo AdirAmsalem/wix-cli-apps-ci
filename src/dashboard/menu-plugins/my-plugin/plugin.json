@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/dashboard-menu-plugin.json",
+  "id": "b7f9948c-088f-4d9b-9f76-e63f3f0caac7",
+  "title": "My Plugin",
+  "iconKey": "Sparkles",
+  "extends": "f3ad314d-0704-48e5-86b5-81acaf43e036",
+  "action": {
+    "navigateToPage": {
+      "pageId": "16e716df-5e07-412b-998d-f52bded15558"
+    }
+  }
+}
