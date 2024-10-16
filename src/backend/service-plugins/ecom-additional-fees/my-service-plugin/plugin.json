@@ -1,0 +1,5 @@
+{
+  "$schema": "https://dev.wix.com/wix-cli/schemas/ecom-additional-fees.json",
+  "id": "196f564c-bfb9-4a0d-b934-133e690af71a",
+  "name": "my-service-plugin"
+}
