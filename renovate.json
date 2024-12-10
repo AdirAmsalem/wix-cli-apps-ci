@@ -5,8 +5,10 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@wix/cli"],
-      "groupName": "wix-cli"
+      "groupName": "wix-cli",
+      "matchPackageNames": [
+        "/^@wix/cli/"
+      ]
     }
   ]
 }
